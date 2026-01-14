@@ -18,6 +18,9 @@ public class Main {
 
         while (!gameOver) {
             printBoard(board);
+            System.out.println("Player " + player + " enter: ");
+            int row = sc.nextInt();
+            int col = sc.nextInt();            
         }
     }
 
