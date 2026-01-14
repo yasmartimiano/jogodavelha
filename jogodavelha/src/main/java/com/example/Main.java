@@ -20,7 +20,13 @@ public class Main {
             printBoard(board);
             System.out.println("Player " + player + " enter: ");
             int row = sc.nextInt();
-            int col = sc.nextInt();            
+            int col = sc.nextInt();    
+            
+            if(board[row][col] == ' '){
+
+            } else {
+                System.out.println("Invalid move.");
+            }
         }
     }
 
