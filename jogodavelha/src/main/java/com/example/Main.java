@@ -1,5 +1,7 @@
 package com.example;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         char[][] board = new char[3][3];
@@ -8,5 +10,18 @@ public class Main {
                 board[row][col] = ' ';
             }
         }
+
+        char player = 'X';
+        boolean gameOver = false;
+
+        Scanner sc = new Scanner(System.in);
+
+        while (!gameOver) {
+            printBoard(board);
+        }
+    }
+
+    public static void printBoard(char[][] board){
+
     }
 }
