@@ -25,7 +25,7 @@ public class Main {
             if(board[row][col] == ' '){
 
             } else {
-                System.out.println("Invalid move.");
+                System.out.println("Invalid move. Try again.");
             }
         }
     }
