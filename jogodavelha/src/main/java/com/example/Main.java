@@ -23,11 +23,25 @@ public class Main {
             int col = sc.nextInt();    
             
             if(board[row][col] == ' '){
-
+                board[row][col] = player;
+                gameOver = haveWon(board, player);
+                if (gameOver) {
+                    System.out.println("Player " + player + " has won: ");
+                } else {
+                    if (player == 'X') {
+                        player = 'O';
+                    } else {
+                        player = 'X';  
+                    }
+                }
             } else {
                 System.out.println("Invalid move. Try again.");
             }
         }
+    }
+
+    public static boolean haveWon(char[][] board, char player){
+
     }
 
     public static void printBoard(char[][] board){
