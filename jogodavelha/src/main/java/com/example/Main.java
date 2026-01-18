@@ -39,13 +39,24 @@ public class Main {
                 System.out.println("Invalid move. Try again.");
             }
         }
+        printBoard(board);
     }
 
     public static boolean haveWon(char[][] board, char player){
-
+        //verificando as linhas
+        for (int row = 0; row < board.length; row++) {
+            if (board[row][0] == player && board[row][1] == player && board[row][2] == player) {
+                return true;
+            }
+        }
     }
 
     public static void printBoard(char[][] board){
-
+        for (int row = 0; row < board.length; row++) {
+            for (int col = 0; col < board[row].length; col++) {
+                System.out.println(board[row][col] + " ");
+            }
+            System.out.println(' ');
+        }
     }
 }
